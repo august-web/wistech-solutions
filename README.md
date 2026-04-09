@@ -1,210 +1,226 @@
-# Wistech Solutions - Modern Homepage Design
+# Wistech Solutions - Modern React Homepage
 
-A clean, professional, and responsive homepage concept for Wistech Solutions featuring modern design principles, smooth animations, and excellent user experience.
+A professional, responsive, multi-page React website for Wistech Solutions built with TypeScript, Vite, and React Router. Features modern design, smooth animations, and professional React Icons.
 
-## 🎯 Features
+## ✨ Features
 
-✅ **Responsive Design** - Mobile-first approach, works perfectly on all devices
-✅ **Modern Aesthetic** - Clean typography, smooth gradients, and professional color palette
-✅ **Interactive Elements** - Smooth scrolling, animations, and hover effects
-✅ **Performance Optimized** - Lightweight, no unnecessary dependencies
-✅ **Accessibility Friendly** - Semantic HTML and proper ARIA labels
-✅ **SEO Ready** - Proper meta tags and semantic structure
+- ✅ **Multi-Page SPA** - React Router v6 with 4 pages (Home, Services, About, Contact)
+- ✅ **Modern Stack** - React 18 + TypeScript + Vite + React Router
+- ✅ **Professional Icons** - React Icons (Font Awesome) throughout
+- ✅ **Responsive Design** - Mobile-first, works on all devices
+- ✅ **Smooth Animations** - Floating elements, transitions, and scrolling effects
+- ✅ **SEO Optimized** - Proper meta tags and semantic HTML
+- ✅ **Production Ready** - Clean code, type-safe, optimized builds
 
-## 📋 Sections Included
+## 🚀 Quick Start
 
-1. **Navigation Bar** - Sticky navigation with mobile menu
-2. **Hero Section** - Eye-catching headline with dual CTAs and gradient background
-3. **Services Section** - 4 service cards with icons
-4. **About Section** - Company overview with stats and SVG illustration
-5. **Why Choose Us** - 4 feature highlights with icons
-6. **Call-to-Action** - Strong engagement section with prominent button
-7. **Footer** - Complete footer with links and social media
+### Prerequisites
+- Node.js 16+ and npm
+
+### Installation & Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build for Production
+
+```bash
+# Create optimized production build
+npm run build
+
+# Preview production build locally
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── components/              # Reusable components
+│   ├── Navbar.tsx          # Navigation with logo
+│   ├── Hero.tsx            # Hero section
+│   ├── Services.tsx        # Services showcase
+│   ├── About.tsx           # About section with stats
+│   ├── WhyChooseUs.tsx     # Features/benefits
+│   ├── CTA.tsx             # Call-to-action section
+│   ├── Footer.tsx          # Footer with links & social
+│   └── [Component].css     # Component-scoped styles
+├── pages/                  # Page components
+│   ├── HomePage.tsx        # Home page (/)
+│   ├── ServicesPage.tsx    # Services page (/services)
+│   ├── AboutPage.tsx       # About page (/about)
+│   ├── ContactPage.tsx     # Contact page (/contact)
+│   └── Pages.css           # Page-level styling
+├── styles/
+│   └── index.css           # Global styles & CSS variables
+├── App.tsx                 # Main app with Router
+└── main.tsx               # React entry point
+
+public/
+├── images/
+│   └── wistech-logo.svg   # Company logo
+└── favicon.svg            # Browser favicon
+
+index.html                 # React SPA entry point
+```
 
 ## 🎨 Design System
 
 ### Color Palette
-- **Primary**: `#1e3c72` (Deep Blue)
-- **Secondary**: `#2a5298` (Medium Blue)
-- **Accent**: `#00d4ff` (Cyan)
-- **Light Background**: `#f8f9fa`
-- **Text**: `#1a1a1a` (Dark) / `#6b7280` (Light)
+```css
+--primary-color: #1e3c72       /* Deep Blue */
+--secondary-color: #2a5298     /* Medium Blue */
+--accent-color: #00d4ff        /* Cyan */
+--success-color: #00b894       /* Green */
+--light-bg: #f8f9fa            /* Light Gray */
+--dark-text: #1a1a1a           /* Dark */
+--light-text: #6b7280          /* Medium Gray */
+```
 
 ### Typography
 - **Font**: Inter (from Google Fonts)
 - **Weights**: 300, 400, 500, 600, 700
-- **Sizes**: Scalable based on screen size
 
-### Spacing & Shadows
-- Consistent 20px padding for containers
-- Soft shadows for depth
-- Rounded corners (8px-12px) for modern look
+### Responsive Breakpoints
+- **Desktop**: 1200px+
+- **Tablet**: 768px - 1199px
+- **Mobile**: 480px - 767px
 
-## 📦 File Structure
+## 📱 Pages & Sections
 
-```
-wistech-redesign/
-├── index.html          # Main HTML file
-├── styles.css          # Complete styling with responsive design
-├── script.js           # Interactive features and animations
-└── README.md          # Documentation
-```
+### Home Page (/)
+- **Navbar** - Fixed navigation with mobile menu
+- **Hero** - Eye-catching headline with CTAs
+- **Services** - 4 service cards with React Icons
+- **About** - Company info with animated stats and Wistech logo
+- **Why Choose Us** - 4 key features with icons
+- **CTA** - Full-width engagement section
+- **Footer** - Comprehensive footer with links and social
 
-## 🚀 Getting Started
+### Services Page (/services)
+- Page hero section
+- 6 detailed service cards with icons, descriptions, and features
+- CTA section
 
-1. **Extract files** to your desired location
-2. **Open `index.html`** in your web browser
-3. No dependencies or installation required!
+### About Page (/about)
+- Company description and mission
+- Company statistics
+- Leadership team showcase
+- Core values section
+- Wistech logo integration
 
-### Using with a Local Server (Optional)
+### Contact Page (/contact)
+- Contact information (address, phone, email, hours)
+- Contact form with validation
+- Embedded Google Maps
+- Professional icons for each contact method
 
-For best experience, serve with a local server:
+## 🔧 Available Scripts
 
 ```bash
-# Using Python 3
-python -m http.server 8000
+# Start development server with hot reload
+npm run dev
 
-# Using Node.js (with http-server package)
-npx http-server
+# Build for production
+npm run build
 
-# Using PHP
-php -S localhost:8000
+# Preview production build
+npm run preview
+
+# Run ESLint
+npm run lint
 ```
 
-Then open `http://localhost:8000` in your browser.
+## 📦 Dependencies
 
-## 💡 Customization Guide
+### Core
+- `react@18.2.0` - UI library
+- `react-dom@18.2.0` - React DOM rendering
+- `react-router-dom@6.20.0` - Client-side routing
+- `react-icons@5.6.0` - Font Awesome icons
 
-### Colors
-Edit the CSS variables in `styles.css`:
+### Build Tools
+- `vite@5.0.8` - Next generation build tool
+- `typescript@5.2.2` - Type safety
+- `eslint@8.54.0` - Code linting
+
+## 🎯 Customization
+
+### Change Company Name
+Edit in:
+- `src/components/Navbar.tsx` - Logo alt text
+- `src/components/Footer.tsx` - Footer company name
+- `index.html` - Page title
+
+### Change Colors
+Edit CSS variables in `src/styles/index.css`:
 ```css
 :root {
-    --primary-color: #1e3c72;
-    --secondary-color: #2a5298;
-    --accent-color: #00d4ff;
-    /* ... other variables ... */
+  --primary-color: #YOUR_COLOR;
+  --accent-color: #YOUR_COLOR;
+  /* Update other colors as needed */
 }
 ```
 
-### Content
-Update text and information directly in `index.html`:
-- Modify hero title and subtitle
-- Update service descriptions
-- Edit company information in About section
-- Change contact email and phone
+### Update Contact Information
+Edit `src/components/Footer.tsx` and `src/pages/ContactPage.tsx`
 
-### Images
-Replace the SVG illustrations in the About section with your own images:
-```html
-<img src="your-image.jpg" alt="Company Image" style="border-radius: 12px; width: 100%;">
+### Add New Service
+Edit `src/pages/ServicesPage.tsx`:
+```tsx
+import { FaYourIcon } from 'react-icons/fa'
+
+const services = [
+  // ... existing services
+  {
+    icon: FaYourIcon,
+    title: 'Your Service',
+    description: 'Your description'
+  }
+]
 ```
 
-### Social Links
-Update social media links in the footer:
-```html
-<a href="https://linkedin.com/company/wistech" aria-label="LinkedIn">
+## 🌐 Deployment
+
+### Netlify
+```bash
+npm run build
+# Drag and drop dist/ folder to Netlify
 ```
 
-## 🔧 Browser Support
+### Vercel
+```bash
+# Connect GitHub repo to Vercel
+# Automatic deployments on push
+```
+
+### Traditional Hosting
+1. Run `npm run build`
+2. Upload `dist/` contents via FTP
+3. Set root directory to `dist/`
+
+## 🎯 Browser Support
 
 - Chrome/Edge (Latest)
 - Firefox (Latest)
 - Safari (Latest)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 📱 Responsive Breakpoints
+## 🔗 GitHub
 
-- **Desktop**: 1200px+ (Full layout)
-- **Tablet**: 769px - 1199px (Adjusted grid)
-- **Mobile**: 480px - 768px (Single column)
-- **Small Mobile**: Below 480px (Optimized layout)
-
-## ✨ Key Features
-
-### 1. Navigation
-- Fixed header with backdrop blur
-- Mobile hamburger menu
-- Smooth scroll to sections
-- Active link highlighting
-
-### 2. Hero Section
-- Full-screen height on desktop
-- Responsive gradient background
-- Animated SVG elements
-- Dual CTA buttons
-
-### 3. Service Cards
-- Hover animations
-- Icon backgrounds
-- Clean typography
-- Shadow effects
-
-### 4. About Section
-- Two-column layout
-- Animated statistics
-- SVG illustration placeholder
-- Responsive grid
-
-### 5. Why Choose Us
-- 4 feature highlights
-- Icon-based design
-- Centered content
-- Grid layout
-
-### 6. CTA Section
-- Full-width engagement
-- Gradient background
-- Animated decorative elements
-- Prominent button
-
-### 7. Footer
-- Multi-column layout
-- Social media links
-- Contact information
-- Copyright notice
-
-## 🎬 Animations
-
-- **Fade In Up**: Elements fade and slide up on page load
-- **Hover Lift**: Cards lift on hover with enhanced shadow
-- **Parallax**: Subtle parallax effect on hero content
-- **Counter Animation**: Statistics animate when visible
-- **Scroll Trigger**: Elements animate as they enter viewport
-
-## 📈 Performance
-
-- **Lightweight**: No heavy frameworks or libraries
-- **Fast Load Time**: Optimized SVG graphics
-- **Smooth Animations**: GPU-accelerated transitions
-- **Mobile Optimized**: Minimal JavaScript for mobile devices
-
-## 🔐 SEO Ready
-
-- Semantic HTML structure
-- Meta tags for open graph
-- Proper heading hierarchy
-- Alt text for images
-- Mobile viewport configuration
-
-## 🎓 Learning Resources
-
-This template demonstrates:
-- Modern CSS Grid and Flexbox
-- CSS Custom Properties (Variables)
-- JavaScript ES6+ features
-- Intersection Observer API
-- Mobile-first responsive design
-- CSS animations and transitions
+Repository: [august-web/wistech-solutions](https://github.com/august-web/wistech-solutions)
 
 ## 📄 License
 
-This design template is provided as-is for use with Wistech Solutions.
-
-## 🤝 Support
-
-For questions or customization needs, ensure all files are in the same directory and check browser console for any errors.
+Professional design template for Wistech Solutions.
 
 ---
 
-**Last Updated**: April 2026
-**Version**: 1.0.0
+**Last Updated**: April 2026 | **Version**: 2.0.0 | **Status**: Production Ready
