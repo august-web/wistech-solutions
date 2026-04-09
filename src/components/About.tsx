@@ -66,22 +66,7 @@ export default function About() {
             </div>
           </div>
           <div className="about-image">
-            <div className="image-placeholder">
-              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="imgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#1e3c72" stopOpacity="0.2" />
-                    <stop offset="100%" stopColor="#00d4ff" stopOpacity="0.1" />
-                  </linearGradient>
-                </defs>
-                <rect width="400" height="300" fill="url(#imgGrad)" rx="10" />
-                <circle cx="200" cy="150" r="80" fill="#1e3c72" opacity="0.3" />
-                <rect x="120" y="80" width="160" height="140" fill="none" stroke="#00d4ff" strokeWidth="2" rx="10" opacity="0.5" />
-                <line x1="150" y1="120" x2="250" y2="120" stroke="#00d4ff" strokeWidth="1.5" opacity="0.4" />
-                <line x1="150" y1="150" x2="250" y2="150" stroke="#00d4ff" strokeWidth="1.5" opacity="0.4" />
-                <line x1="150" y1="180" x2="250" y2="180" stroke="#00d4ff" strokeWidth="1.5" opacity="0.4" />
-              </svg>
-            </div>
+            <img src="/images/wistech-logo.svg" alt="Wistech Solutions Logo" className="about-logo" />
           </div>
         </div>
       </div>
