@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="wistechGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#0099FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6B5BFF;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#00D9FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00FFA3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main text with gradient -->
+  <text x="30" y="45" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="url(#wistechGradient)" letter-spacing="1">
+    WISTECH
+  </text>
+  
+  <!-- Decorative element/tech symbol -->
+  <rect x="205" y="18" width="6" height="6" fill="#00D9FF" rx="1"/>
+  <rect x="215" y="18" width="6" height="6" fill="#0099FF" rx="1"/>
+  <rect x="205" y="28" width="6" height="6" fill="#6B5BFF" rx="1"/>
+  <rect x="215" y="28" width="6" height="6" fill="#00FFA3" rx="1"/>
+</svg>
